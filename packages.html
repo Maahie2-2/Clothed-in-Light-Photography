@@ -20,16 +20,22 @@
 
     <style>
         :root {
-            --color-black: #4A3F35;      /* Deep Charcoal / Warm Gray */
+            --color-black: #4A3F35;
+            /* Deep Charcoal / Warm Gray */
             --color-white: #ffffff;
-            --color-bg: #FAF6F0;         /* Warm Cream / Off-White */
-            --color-gold: #D4BFA8;       /* Soft Gold / Luminous Beige */
-            --color-gold-light: #F5F0E8;  /* Soft Ivory */
+            --color-bg: #FAF6F0;
+            /* Warm Cream / Off-White */
+            --color-gold: #D4BFA8;
+            /* Soft Gold / Luminous Beige */
+            --color-gold-light: #F5F0E8;
+            /* Soft Ivory */
             --color-gray-50: #FAF6F0;
             --color-gray-100: #F5F0E8;
             --color-gray-200: #E8D9B8;
-            --color-gray-400: #A8B5A2;    /* Sage / Muted Olive */
-            --color-gray-600: #C9A88F;    /* Dusty Blush / Warm Taupe */
+            --color-gray-400: #A8B5A2;
+            /* Sage / Muted Olive */
+            --color-gray-600: #C9A88F;
+            /* Dusty Blush / Warm Taupe */
             --color-gray-800: #5C5348;
             --color-gray-900: #4A3F35;
 
@@ -196,29 +202,29 @@
             .nav-container {
                 height: 70px;
                 padding: 0 1.5rem;
+                display: flex !important;
+                align-items: center !important;
+                position: relative;
             }
 
             .logo {
                 font-size: 1.1rem;
+                position: relative;
+                left: 0;
+                transform: none;
+                align-items: flex-start;
+                padding-right: 60px !important;
             }
 
             .nav-toggle {
                 display: flex !important;
                 position: absolute !important;
-                right: 1.5rem;
-                top: 50%;
-                transform: translateY(-50%);
+                right: 0.4rem !important;
+                top: 35% !important;
+                transform: translateY(-50%) !important;
                 z-index: 10000;
                 visibility: visible !important;
                 opacity: 1 !important;
-            }
-
-            .logo {
-                position: relative;
-                left: 0;
-                transform: none;
-                align-items: flex-start;
-                margin-right: 60px; /* Space for the absolute toggle */
             }
 
             .logo-subtitle {
@@ -363,7 +369,8 @@
 
         @media (max-width: 480px) {
             .packages-container {
-                padding: 2rem 0.75rem; /* Maximize width on mobile */
+                padding: 2rem 0.75rem;
+                /* Maximize width on mobile */
             }
         }
 
@@ -485,7 +492,8 @@
 
         @media (max-width: 992px) {
             .package-row {
-                grid-template-columns: 1fr 1.2fr; /* Slightly more space for text on mobile */
+                grid-template-columns: 1fr 1.2fr;
+                /* Slightly more space for text on mobile */
                 gap: 1.5rem;
                 margin-bottom: 4rem;
             }
@@ -495,16 +503,19 @@
             }
 
             .package-name {
-                font-size: 2rem; /* Increased from 1.8rem */
+                font-size: 2rem;
+                /* Increased from 1.8rem */
             }
 
             .package-price {
-                font-size: 1.4rem; /* Increased from 1.2rem */
+                font-size: 1.4rem;
+                /* Increased from 1.2rem */
                 margin-bottom: 1rem;
             }
 
             .package-details li {
-                font-size: 1rem; /* Increased from 0.9rem */
+                font-size: 1rem;
+                /* Increased from 0.9rem */
                 padding: 0.6rem 0;
             }
 
@@ -535,11 +546,11 @@
                 gap: 1rem;
                 margin-bottom: 3rem;
             }
-            
+
             .package-name {
                 font-size: 1.5rem;
             }
-            
+
             .package-details li {
                 font-size: 0.8rem;
             }
@@ -827,13 +838,12 @@
             <div>
                 <h4 class="footer-title">Connect</h4>
                 <div class="social-links">
-                    <a href="https://www.instagram.com/clothedinlightphoto?fbclid=IwY2xjawRlnMJleHRuA2FlbQIxMABicmlkETFIbmowR0YySFlQSlVaNXE1c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHt1KmmPdGuqr_yRc2RymTZwasessqtehMBHeVFAdXgRD8msCeIcL5UUnTKmT_aem_fAMfDWV3ShYGOih2zzGvsA" target="_blank" class="social-link"
-                        aria-label="Instagram"><i class="ri-instagram-line"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=61588555653535"
-                        target="_blank" class="social-link" aria-label="Facebook"><i
-                            class="ri-facebook-circle-line"></i></a>
-                    <a href="#" target="_blank" class="social-link"
-                        aria-label="TikTok"><i class="ri-tiktok-line"></i></a>
+                    <a href="https://www.instagram.com/clothedinlightphoto?fbclid=IwY2xjawRlnMJleHRuA2FlbQIxMABicmlkETFIbmowR0YySFlQSlVaNXE1c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHt1KmmPdGuqr_yRc2RymTZwasessqtehMBHeVFAdXgRD8msCeIcL5UUnTKmT_aem_fAMfDWV3ShYGOih2zzGvsA"
+                        target="_blank" class="social-link" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61588555653535" target="_blank" class="social-link"
+                        aria-label="Facebook"><i class="ri-facebook-circle-line"></i></a>
+                    <a href="#" target="_blank" class="social-link" aria-label="TikTok"><i
+                            class="ri-tiktok-line"></i></a>
                 </div>
             </div>
         </div>

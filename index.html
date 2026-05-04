@@ -20,16 +20,22 @@
 
     <style>
         :root {
-            --color-black: #4A3F35;      /* Deep Charcoal / Warm Gray */
+            --color-black: #4A3F35;
+            /* Deep Charcoal / Warm Gray */
             --color-white: #ffffff;
-            --color-bg: #FAF6F0;         /* Warm Cream / Off-White */
-            --color-gold: #D4BFA8;       /* Soft Gold / Luminous Beige */
-            --color-gold-light: #F5F0E8;  /* Soft Ivory */
+            --color-bg: #FAF6F0;
+            /* Warm Cream / Off-White */
+            --color-gold: #D4BFA8;
+            /* Soft Gold / Luminous Beige */
+            --color-gold-light: #F5F0E8;
+            /* Soft Ivory */
             --color-gray-50: #FAF6F0;
             --color-gray-100: #F5F0E8;
             --color-gray-200: #E8D9B8;
-            --color-gray-400: #A8B5A2;    /* Sage / Muted Olive */
-            --color-gray-600: #C9A88F;    /* Dusty Blush / Warm Taupe */
+            --color-gray-400: #A8B5A2;
+            /* Sage / Muted Olive */
+            --color-gray-600: #C9A88F;
+            /* Dusty Blush / Warm Taupe */
             --color-gray-800: #5C5348;
             --color-gray-900: #4A3F35;
 
@@ -252,6 +258,8 @@
             .nav-container {
                 padding: 0 1.5rem;
                 height: 80px;
+                display: flex !important;
+                align-items: center !important;
                 justify-content: space-between;
                 position: relative;
             }
@@ -261,14 +269,15 @@
                 position: relative;
                 left: 0;
                 transform: none;
+                padding-right: 60px !important;
             }
 
             .nav-toggle {
                 display: flex !important;
                 position: absolute !important;
-                right: 1.5rem;
-                top: 50%;
-                transform: translateY(-50%);
+                right: 0.4rem !important;
+                top: 35% !important;
+                transform: translateY(-50%) !important;
                 z-index: 10000;
                 visibility: visible !important;
                 opacity: 1 !important;
@@ -795,14 +804,16 @@
 
         .about-grid {
             display: grid;
-            grid-template-columns: 1.3fr 0.7fr; /* Content left, smaller image right */
+            grid-template-columns: 1.3fr 0.7fr;
+            /* Content left, smaller image right */
             gap: 4rem;
             align-items: center;
         }
 
         @media (max-width: 991px) {
             .about-grid {
-                grid-template-columns: 1.3fr 0.7fr; /* Preserve 2 columns on mobile */
+                grid-template-columns: 1.3fr 0.7fr;
+                /* Preserve 2 columns on mobile */
                 gap: 1.5rem;
             }
         }
@@ -875,15 +886,18 @@
                 font-size: 1.6rem;
                 margin-bottom: 0.5rem;
             }
+
             .about-title {
                 font-size: 1.4rem;
                 margin-bottom: 0.8rem;
             }
+
             .about-text {
                 font-size: 0.8rem;
                 line-height: 1.6;
                 margin-bottom: 0.8rem;
             }
+
             .about-signature {
                 font-size: 1.8rem;
                 margin-top: 0.5rem;
@@ -1668,7 +1682,8 @@
                     <h3 class="service-title">Couples</h3>
                     <div class="service-border"></div>
                     <p class="service-description">
-                        Capturing the intimate whispers, the authentic connections, and every timeless moment of your love
+                        Capturing the intimate whispers, the authentic connections, and every timeless moment of your
+                        love
                         story.
                     </p>
                     <a href="packages.html#couples" class="learn-more-link">Learn More</a>
@@ -1682,7 +1697,8 @@
                     <h3 class="service-title">Mini Sessions</h3>
                     <div class="service-border"></div>
                     <p class="service-description">
-                        Perfect for seasonal updates, quick milestones, or simply capturing the beauty in a shorter window of time.
+                        Perfect for seasonal updates, quick milestones, or simply capturing the beauty in a shorter
+                        window of time.
                     </p>
                     <a href="packages.html#mini-sessions" class="learn-more-link">Learn More</a>
                 </div>
@@ -1875,8 +1891,8 @@
                                 Mini Sessions</label>
                             <label class="radio-label"><input type="radio" name="session_type" value="Engagement">
                                 Engagement</label>
-                            <label class="radio-label"><input type="radio" name="session_type"
-                                    value="Graduation"> Graduation (Individual/Senior)</label>
+                            <label class="radio-label"><input type="radio" name="session_type" value="Graduation">
+                                Graduation (Individual/Senior)</label>
                             <label class="radio-label"><input type="radio" name="session_type" value="Family">
                                 Family</label>
                             <label class="radio-label"><input type="radio" name="session_type" value="Couples">
@@ -1937,13 +1953,12 @@
             <div>
                 <h4 class="footer-title">Connect</h4>
                 <div class="social-links">
-                    <a href="https://www.instagram.com/clothedinlightphoto?fbclid=IwY2xjawRlnMJleHRuA2FlbQIxMABicmlkETFIbmowR0YySFlQSlVaNXE1c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHt1KmmPdGuqr_yRc2RymTZwasessqtehMBHeVFAdXgRD8msCeIcL5UUnTKmT_aem_fAMfDWV3ShYGOih2zzGvsA" target="_blank" class="social-link"
-                        aria-label="Instagram"><i class="ri-instagram-line"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=61588555653535"
-                        target="_blank" class="social-link" aria-label="Facebook"><i
-                            class="ri-facebook-circle-line"></i></a>
-                    <a href="#" target="_blank" class="social-link"
-                        aria-label="TikTok"><i class="ri-tiktok-line"></i></a>
+                    <a href="https://www.instagram.com/clothedinlightphoto?fbclid=IwY2xjawRlnMJleHRuA2FlbQIxMABicmlkETFIbmowR0YySFlQSlVaNXE1c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHt1KmmPdGuqr_yRc2RymTZwasessqtehMBHeVFAdXgRD8msCeIcL5UUnTKmT_aem_fAMfDWV3ShYGOih2zzGvsA"
+                        target="_blank" class="social-link" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61588555653535" target="_blank" class="social-link"
+                        aria-label="Facebook"><i class="ri-facebook-circle-line"></i></a>
+                    <a href="#" target="_blank" class="social-link" aria-label="TikTok"><i
+                            class="ri-tiktok-line"></i></a>
                 </div>
 
             </div>
